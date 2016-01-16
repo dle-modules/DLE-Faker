@@ -1,0 +1,13 @@
+# Исключаем всё (файлы от DLE нам не нужны)
+/*
+
+# Кроме самого .gitignore (и как следствие всего, что в нём написано)
+!.gitignore
+
+# Кроме папок и файлов модуля
+!/engine/inc/faker.php
+!/engine/modules/faker/
+!/engine/skins/images/faker.png
+!/README.md
+!/LICENSE
+!/faker_install.php

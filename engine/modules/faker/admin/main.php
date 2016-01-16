@@ -74,7 +74,7 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Кол-во новостей
 					</label>
 					<div class="col-md-9">
-						<input type="number" name="news[count]" value="<?php echo getVal('news.count', '5')?>">
+						<input type="number" name="news[count]" value="<?php echo getVal('news.count', '5') ?>">
 					</div>
 				</div>
 
@@ -83,8 +83,8 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Дата
 					</label>
 					<div class="col-md-9">
-						от: <input type="date" class="faker-date" name="news[date][from]" value="<?php echo getVal('news.date.from', date('Y-m-d', time() - 2592000))?>">
-						до: <input type="date" class="faker-date" name="news[date][to]" value="<?php echo getVal('news.date.to', date('Y-m-d', time()))?>">
+						от: <input type="date" class="faker-date" name="news[date][from]" value="<?php echo getVal('news.date.from', date('Y-m-d', time() - 2592000)) ?>">
+						до: <input type="date" class="faker-date" name="news[date][to]" value="<?php echo getVal('news.date.to', date('Y-m-d', time())) ?>">
 					</div>
 				</div>
 
@@ -93,8 +93,8 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Длина заголовка
 					</label>
 					<div class="col-md-9">
-						от: <input type="number" class="faker-number" name="news[title][from]" value="<?php echo getVal('news.title.from', '15')?>">
-						до: <input type="number" class="faker-number" name="news[title][to]" value="<?php echo getVal('news.title.to', '100')?>">
+						от: <input type="number" class="faker-number" name="news[title][from]" value="<?php echo getVal('news.title.from', '15') ?>">
+						до: <input type="number" class="faker-number" name="news[title][to]" value="<?php echo getVal('news.title.to', '100') ?>">
 					</div>
 				</div>
 
@@ -103,11 +103,11 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Длина краткой новости
 					</label>
 					<div class="col-md-5">
-						от: <input type="number" class="faker-number" name="news[short_story][from]" value="<?php echo getVal('news.short_story.from', '140')?>">
-						до: <input type="number" class="faker-number" name="news[short_story][to]" value="<?php echo getVal('news.short_story.to', '500')?>">
+						от: <input type="number" class="faker-number" name="news[short_story][from]" value="<?php echo getVal('news.short_story.from', '140') ?>">
+						до: <input type="number" class="faker-number" name="news[short_story][to]" value="<?php echo getVal('news.short_story.to', '500') ?>">
 					</div>
 					<div class="col-md-4">
-						кол-во картинок: <input type="number" class="faker-number" name="news[short_story][images][count]" value="<?php echo getVal('news.short_story.images.count', '0')?>">
+						кол-во картинок: <input type="number" class="faker-number" name="news[short_story][images][count]" value="<?php echo getVal('news.short_story.images.count', '0') ?>">
 					</div>
 				</div>
 				<div class="form-group faker-form-group">
@@ -115,8 +115,8 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Картинки для краткой новости
 					</label>
 					<div class="col-md-5">
-						от: <input type="text" class="faker-medium" name="news[short_story][images][from]" value="<?php echo getVal('news.short_story.images.from', '200x200')?>">
-						до: <input type="text" class="faker-medium" name="news[short_story][images][to]" value="<?php echo getVal('news.short_story.images.to', '500x500')?>">
+						от: <input type="text" class="faker-medium" name="news[short_story][images][from]" value="<?php echo getVal('news.short_story.images.from', '200x200') ?>">
+						до: <input type="text" class="faker-medium" name="news[short_story][images][to]" value="<?php echo getVal('news.short_story.images.to', '500x500') ?>">
 					</div>
 					<div class="col-md-4">
 						тематика картинок:
@@ -144,11 +144,11 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Длина полной новости
 					</label>
 					<div class="col-md-5">
-						от: <input type="number" class="faker-number" name="news[full_story][from]" value="<?php echo getVal('news.full_story.to', '600')?>">
-						до: <input type="number" class="faker-number" name="news[full_story][to]" value="<?php echo getVal('news.full_story.to', '1500')?>">
+						от: <input type="number" class="faker-number" name="news[full_story][from]" value="<?php echo getVal('news.full_story.to', '600') ?>">
+						до: <input type="number" class="faker-number" name="news[full_story][to]" value="<?php echo getVal('news.full_story.to', '1500') ?>">
 					</div>
 					<div class="col-md-4">
-						кол-во картинок: <input type="number" class="faker-number" name="news[full_story][images][count]" value="<?php echo getVal('news.full_story.images.count', '0')?>">
+						кол-во картинок: <input type="number" class="faker-number" name="news[full_story][images][count]" value="<?php echo getVal('news.full_story.images.count', '0') ?>">
 					</div>
 				</div>
 
@@ -157,8 +157,8 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 						Картинки для полной новости
 					</label>
 					<div class="col-md-5">
-						от: <input type="text" class="faker-medium" name="news[full_story][images][from]" value="<?php echo getVal('news.full_story.images.from', '500x500')?>">
-						до: <input type="text" class="faker-medium" name="news[full_story][images][to]" value="<?php echo getVal('news.full_story.images.to', '700x500')?>">
+						от: <input type="text" class="faker-medium" name="news[full_story][images][from]" value="<?php echo getVal('news.full_story.images.from', '500x500') ?>">
+						до: <input type="text" class="faker-medium" name="news[full_story][images][to]" value="<?php echo getVal('news.full_story.images.to', '700x500') ?>">
 					</div>
 					<div class="col-md-4">
 						тематика картинок:
@@ -203,7 +203,7 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 					<div class="col-md-9">
 						<select data-placeholder="Выберите категорию ..." name="news[category][]" id="category" class="categoryselect" <?php if ($config['allow_multi_category']): ?>multiple<?php endif?> style="width:100%;max-width:350px;">
 							<?php $selecedCats = (isset($_POST['news']['category'])) ? $_POST['news']['category'] : 0;?>
-							<?php echo CategoryNewsSelection($selecedCats, 0);?>
+							<?php echo CategoryNewsSelection($selecedCats, 0); ?>
 						</select>
 					</div>
 				</div>
@@ -223,10 +223,10 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 					</label>
 					<div class="col-md-9">
 						<input type="hidden" name="mod" value="faker">
-						<input type="hidden" name="user_hash" value="<?php echo $dle_login_hash?>">
+						<input type="hidden" name="user_hash" value="<?php echo $dle_login_hash ?>">
 						<input type="submit" name="add" class="btn btn-lg btn-green" value="Добавить">
 						<!-- <input type="submit" name="preview" class="btn btn-lg btn-black" value="Посмотреть"> -->
-						<a href="<?php echo $config['admin_path']?>?mod=faker" class="btn btn-lg btn-default">Сбросить настройки</a>
+						<a href="<?php echo $config['admin_path'] ?>?mod=faker" class="btn btn-lg btn-default">Сбросить настройки</a>
 					</div>
 				</div>
 			</div>
@@ -243,7 +243,11 @@ echoheader('<i class="icon-coffee"></i> DLE-Faker', 'Модуль для зап�
 </script>
 <?php
 if (isset($_POST['add'])) {
-	$statistics = array();
+	if ($_REQUEST['user_hash'] == '' or $_REQUEST['user_hash'] != $dle_login_hash) {
+		die('Hacking attempt! User not found');
+	}
+
+	$statistics      = array();
 	$microtimerStart = microtime(true);
 
 	if (function_exists("memory_get_usage")) {
@@ -428,7 +432,6 @@ if (isset($_POST['add'])) {
 		$statistics[] = 'Расход памяти: ' . round((memory_get_usage() - $memoryStart) / (1024 * 1024), 2) . ' Мб.';
 	}
 
-	
 	echo '<div style="margin: 30px 0;" class="alert">' . implode('<br>', $statistics) . '</div>';
 
 	if (isset($_POST['showresult'])) {

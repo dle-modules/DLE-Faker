@@ -101,7 +101,7 @@ function getAuthor($faker, $type) {
 		$latsUserId = $db->super_query("SELECT user_id FROM " . USERPREFIX . "_users ORDER BY user_id DESC");
 
 		$dir      = ROOT_DIR . '/uploads/fotos';
-		$tmpImage = $faker->image($dir, $faker->numberBetween(80, 100), $faker->numberBetween(60, 100));
+		$tmpImage = $faker->image($dir, $faker->numberBetween(80, 100), $faker->numberBetween(60, 100), 'people');
 		$imgExt   = explode('.', basename($tmpImage));
 
 		$foto = rename($tmpImage, $dir . '/foto_' . ($latsUserId['user_id'] + 1) . '.' . $imgExt[1]);
